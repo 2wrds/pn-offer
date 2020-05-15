@@ -1,1 +1,153 @@
-/*mobile styles*/
+@font-face {
+	font-family: 'PT Sans';
+	src: local('PT Sans'), local('PTSans-Regular'), url('fonts/ptsans.woff2') format('woff2'), url('fonts/ptsans.woff') format('woff'), url('fonts/ptsans.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	color: #000;
+	width: 595px;
+	margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.header .logo-pn {
+	width: 148px;
+	height: 32px;
+	background: url('../img/logo-pn.svg') no-repeat center / cover;
+}
+
+.header .logo-setl {
+	width: 75px;
+	height: 32px;
+	background: url('../img/logo-setl.svg') no-repeat center / cover;
+}
+
+.header .contacts__item {
+	font-size: 10px;
+	line-height: 10px;
+}
+
+.offer {
+	padding: 19px 29px;
+}
+
+.offer .offer__info {
+	padding-top: 138px;
+	position: relative;
+}
+
+.offer .offer__subtitle {
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	background: #FF0D29;
+	padding: 12px 44px 12px 30px;
+	position: absolute;
+	top: 20px;
+	left: -29px;
+}
+
+.offer .offer__subtitle:after {
+	content: '';
+	display: block;
+	border: 20px solid transparent;
+	border-right: 13px solid #fff;
+	border-bottom: 29px solid #fff;
+	position: absolute;
+	top: -1px;
+	right: -1px;
+}
+
+.offer .offer__title {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 18px;
+	margin: 0;
+	position: relative;
+}
+
+.offer .offer__title:before {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 24px;
+	background: #FF0D29;
+	position: absolute;
+	top: -3px;
+	right: calc(100% + 25px);
+}
+
+.offer .offer__description {
+	font-size: 17px;
+	line-height: 20px;
+	margin: 20px 0;
+}
+
+.offer .offer__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.offer .offer__item {
+	width: 263px;
+}
+
+.offer .offer__img {
+	width: 263px;
+	height: 222px;
+	object-fit: cover;
+}
+
+.offer .offer__caption {
+	font-size: 16px;
+	line-height: 20px;
+	padding-left: 11px;
+	margin: 22px 0 0;
+	position: relative;
+}
+
+.offer .offer__caption span {
+	font-weight: bold;
+}
+
+.offer .offer__caption:before {
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	background: #FF0D29;
+	position: absolute;
+	top: 8px;
+	left: 0px;
+}
+
+.footnote {
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #686868;
+	margin-top: 134px;
+	position: relative;
+}
+
+.footnote:before {
+	content: '';
+	display: block;
+	width: 536px;
+	height: 1px;
+	background: #C4C4C4;
+	position: absolute;
+	top: -8px;
+	left: 50%;
+	transform: translateX(-50%);
+}
