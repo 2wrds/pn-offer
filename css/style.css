@@ -8,9 +8,9 @@
 body {
   font-family: 'PT Sans', sans-serif;
   color: #000;
+  width: 595px;
+  margin: 0 auto;
 }
-
-
 
 #header {
   display: flex;
